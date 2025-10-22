@@ -41,3 +41,20 @@ for (let i = 0; i < cars.length; i++) {
     GasolineCars.push(thisCar)
   }
 }
+console.log('ciclo for');
+console.log(GasolineCars);
+
+
+cars.forEach((thisCar) => {
+  if (thisCar.fuel === 'benzina') {
+    GasolineCars.push(thisCar)
+  }
+})
+
+console.log('ciclo for each');
+console.log(GasolineCars);
+
+const macchineBenzina = cars.filter(thisCar => thisCar.fuel === 'benzina')
+
+console.log('usando map');
+console.log(macchineBenzina);
