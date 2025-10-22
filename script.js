@@ -56,5 +56,5 @@ console.log(GasolineCars);
 
 const macchineBenzina = cars.filter(thisCar => thisCar.fuel === 'benzina')
 
-console.log('usando map');
+console.log('usando filter');
 console.log(macchineBenzina);
