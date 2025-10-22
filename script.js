@@ -6,7 +6,7 @@ proprietà: marca, modello e alimentazione (benzina, diesel, gpl, elettrico, met
 Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina, nel 
 secondo solo le auto a diesel, nel terzo il resto delle auto. Infine stampa separatamente
 i 3 array.
-
+*/
 const cars = [
 
   { brand: 'Ford', model: 'Fiesta', fuel: 'benzina' },
@@ -30,4 +30,14 @@ const cars = [
   { brand: 'Peugeot', model: '208', fuel: 'metano' }
 
 ]
-*/
+
+
+//nel primo array solo le auto a benzina
+const GasolineCars = []
+
+for (let i = 0; i < cars.length; i++) {
+  const thisCar = cars[i];
+  if (thisCar.fuel === 'benzina') {
+    GasolineCars.push(thisCar)
+  }
+}
