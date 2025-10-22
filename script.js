@@ -58,3 +58,30 @@ const macchineBenzina = cars.filter(thisCar => thisCar.fuel === 'benzina')
 
 console.log('usando filter');
 console.log(macchineBenzina);
+
+
+//nel secondo solo le auto a diesel
+const dieselCars = []
+
+for (let i = 0; i < cars.length; i++) {
+  const thisCar = cars[i];
+  if (thisCar.fuel === 'diesel') {
+    dieselCars.push(thisCar)
+  }
+}
+console.log('ciclo for');
+console.log(dieselCars);
+
+cars.forEach((thisCar) => {
+  if (thisCar.fuel === 'diesel') {
+    dieselCars.push(thisCar)
+  }
+})
+
+console.log('ciclo for each');
+console.log(dieselCars);
+
+const macchineDiesel = cars.filter(thisCar => thisCar.fuel === 'diesel')
+
+console.log('usando filter');
+console.log(macchineDiesel);
